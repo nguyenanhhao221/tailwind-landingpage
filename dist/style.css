@@ -511,11 +511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-32 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -524,16 +519,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
 
 .-mt-14 {
   margin-top: -3.5rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
 }
 
 .mt-14 {
@@ -578,10 +573,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -791,10 +782,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: flex-start;
   }
 
-  .md\:justify-center {
-    justify-content: center;
-  }
-
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -805,24 +792,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-24 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(6rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-14 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:bg-transparent {
