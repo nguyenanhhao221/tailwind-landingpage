@@ -511,6 +511,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -543,6 +548,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -551,12 +560,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 28rem;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
-}
-
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .flex-col {
@@ -565,10 +574,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
@@ -625,6 +630,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -658,6 +669,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-veryDarkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -689,6 +705,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-2 {
@@ -786,6 +807,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
@@ -794,6 +819,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     align-items: baseline;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
 
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
