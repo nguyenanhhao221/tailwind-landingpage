@@ -31,6 +31,22 @@
                 class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight hidden md:block ">
                 Get Started
             </a>
+            <!-- Hamburger Menu -->
+            <button id="menu-btn" class="block hamburger focus:outline-none md:hidden">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col hidden items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Pricing</a>
+                <a href="#">Products</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+            </div>
         </div>
     </nav>
 
@@ -291,8 +307,10 @@
             <div class="flex flex-col justify-between">
                 <form action="">
                     <div class="flex space-x-3">
-                        <input type="text" placeholder="Updated in your inbox" class="flex-1 rounded-full px-4 focus:outline-none">
-                        <button class="text-white bg-brightRed hover:bg-brightRedLight px-6 py-2 rounded-full">Go</button>
+                        <input type="text" placeholder="Updated in your inbox"
+                            class="flex-1 rounded-full px-4 focus:outline-none">
+                        <button
+                            class="text-white bg-brightRed hover:bg-brightRedLight px-6 py-2 rounded-full">Go</button>
                     </div>
 
                 </form>
@@ -303,5 +321,6 @@
         </div>
     </footer>
 </body>
+<script src="../src/script.js"></script>
 
 </html>
