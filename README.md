@@ -3,7 +3,9 @@
 ## Description
 
 This is a simple Responsive Landing page created to learn and practice Tailwind CSS.
-![Manage Landing Page Images](./img/screen.png)
+![Manage Landing Page Images](./dist/img/screen.png)
+
+Live production site [here](https://tailwind-landing-hao.netlify.app).
 
 The project is created follow the tutorial of Traversy Media on Youtube
 
